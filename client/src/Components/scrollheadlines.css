@@ -1,0 +1,31 @@
+.scrolling-headlines {
+    width: 100%;
+    overflow: hidden;
+    /* background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; */
+    padding: 10px 0;
+    position: absolute;
+    top: 78px;
+}
+
+.headline-container {
+    display: flex;
+    animation: scroll 30s linear infinite;
+}
+.headline-container:hover{
+    animation-play-state: paused;
+}
+.headline {
+    white-space: nowrap;
+    padding-right: 50px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
